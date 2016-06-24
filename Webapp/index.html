@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="MazeRunners"> 
+    <meta name="application-name" content="MazeRunners" />       
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="icon/Icon-Small.png" sizes="32x32">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/Icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/Icon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/Icon-60@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/Icon-72@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/Icon-76@2x.png"> 
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icon/Icon-60@3x.png">     
+    <link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="icon/iTunesArtwork@2x.png">     
+    <title>The Maze Runners</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <!--<div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>You are not supposed to be here</p>
+      </div>
+    </div>-->
+    <!-- Right panel with cover effect-->
+    <!--<div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>You are not supposed to be here!</p>
+      </div>
+    </div>-->
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">The Maze Runners Online</div>
+            <!--<div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>-->
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <img src="img/Maze.jpg" style='width:100%;max-height:50%;' border="0" alt="Null">
+              <div class="content-block-title">Welcome To The Maze Runners Online App</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <p>Welcome to the webapp of The Maze Runners program.
+                  The Maze Runners program is an C++11 multiplayer maze game, based on the <a href="https://www.github.com/josokw/Maze" target="_blank" class="external">Maze C</a> program. </p>
+                 <p> When the gameserver has been started, a live overview of the gamemap can be seen on the Live Gamemap page. Make sure that the GameServer and the Demons programm are started before you can start player(s) and play the game.</p>
+                </div>
+              </div>
+              <div class="content-block-title">Main Menu</div>
+              <div class="list-block">
+                <ul>
+                <li><a href="gamemap.html" class="item-link">
+                       <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">View Live GameMap</div>
+                        </div>
+                      </div></a></li>
+                <!--<li><a href="https://www.github.com/josokw/Maze" class="external">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Original Mace C program</div>
+                        </div>
+                      </div></a></li>                        -->
+                  <li><a href="downloads.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">Downloads</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <!--<div class="content-block-title">Side panels</div>-->
+              <!--<div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+                </div>
+              </div>-->
+            <!--</div>-->
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <!--<div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
+        </div>-->
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to Paho libary JS -->
+    <script type="text/javascript" src="js/mqttws31.js"></script>    
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
